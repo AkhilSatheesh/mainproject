@@ -1,0 +1,313 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Online Crime Reporting and Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Crime Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+  
+    <style>
+body {
+    background-image: url("/static/images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-attachment: fixed;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+.box2{
+    position: relative;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+ 
+  text-align: left;
+  padding: 8px;
+}
+</style>
+    <style>
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="{%static 'css/bootstrap.min.css' %}" type="text/css" rel="stylesheet" media="all">
+    <link href="{%static 'css/style.css' %}" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="{%static 'css/font-awesome.min.css' %}" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Slider -->
+    <div class="w3-banner-info-w3ltd position-relative">
+        <!-- header -->
+        <header class="bg-primary">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <h1><a class="navbar-brand" href="policehome">Online Crime Reporting and Management System
+
+                        </a></h1>
+                    <button class="navbar-toggler ml-lg-auto ml-sm-5 bg-light" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="ml-lg-5 navbar-nav mr-lg-auto">
+                            <li class="nav-item active  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
+                                <a href="policehome">Home</a>
+                            </li>
+                            <li class="nav-item dropdown mr-lg-4 my-lg-0 my-sm-4 my-3">
+                                <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Complaints
+                                </a>
+
+                            </li>
+                          
+                        </ul>
+                            <ul>
+                                <li class="nav-item dropdown mr-lg-4 my-lg-0 my-sm-4 my-3 text-uppercase font-weight-bold d-block" style="color: white;">{{fn}} Branch </li>
+                            </ul>
+                            <button type="button" class="btn w3ls-btn text-uppercase font-weight-bold d-block" data-toggle="modal"
+                            aria-pressed="false">
+                                <a href="Run_Here" style="color: white;">Logout</a>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+       
+   
+    <div class="wthreepvt-pos py-md-5 py-5" id="positions">
+        <div class="container py-lg-5">
+            <div class="wthreepvt-pos-row row  text-center">
+                <div class="col-lg-4 col-sm-6 wthreepvt-pos-grids">
+                    <div class="p-md-5 p-sm-3" onclick="window.location.href = 'chatpolice';" style=" cursor: pointer;">
+                        <span class="fa fa-check-square" aria-hidden="true"></span>
+                        <h4 class="mt-2 mb-3">Chat With Other Branch</h4>
+                        <p>Use this option to Chat with other branches</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wthreepvt-pos-grids  border-left border-right my-sm-0 my-5">
+                    <div class="p-md-5 p-sm-3" onclick="window.location.href = 'addcriminals';" style=" cursor: pointer;">
+                        <span class="fa fa-suitcase" aria-hidden="true"></span>
+                        <h4 class="mt-2 mb-3">Add Criminals</h4>
+                        <p>Use this option to add Criminals</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 wthreepvt-pos-grids">
+                    <div class="p-md-5 p-sm-3" onclick="window.location.href = 'viewcomp';" style=" cursor: pointer;">
+                        <span class="fa fa-thumbs-up" aria-hidden="true"></span>
+                        <h4 class="mt-2 mb-3">View Complaints</h4>
+                        <p>Use this option to show Criminal Compalints</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wthreepvt-pos-row border-top row text-center pb-lg-5 pt-md-0 pt-5 mt-md-0 mt-sm-5 mt-4">
+                <div class="col-lg-4 col-sm-6 wthreepvt-pos-grids">
+                    <div class="p-md-5 p-sm-3 col-label" onclick="window.location.href = 'publiccompl';" style=" cursor: pointer;">
+                        <span class="fa fa-thumb-tack" aria-hidden="true"></span>
+                        <h4 class="mt-2 mb-3">View Public Complaint</h4>
+                        <p>Use this option to show Public Compalints</p>
+                    </div>
+                </div>
+                
+
+<div class="col-lg-4 col-sm-6 wthreepvt-pos-grids mt-lg-0 mt-md-3 border-left border-right pt-sm-0 pt-5">
+    <div class="p-md-5 p-sm-3 col-label" onclick="window.location.href = 'crimemissinglist';" style=" cursor: pointer;">
+        <span class="fa fa-external-link" aria-hidden="true"></span>
+        <h4 class="mt-2 mb-3">Missing List</h4>
+        <p>Use this option to show Missing List</p>
+    </div>
+</div>  
+
+</div>
+</div>  
+</div>     
+    
+<div class="w3-banner-info-w3ltd position-relative">
+<footer class="bg-dark">
+<div class="cpy-right text-center py-4">
+<p  style="color: white;">Online Crime Reporting and Management System &copy; All Rights Reserved</p>
+</div>
+</footer>
+</div>
+    
+   
+   
+    {% if meg %}
+    <script>
+
+          // display string message
+    
+        alert( "{{meg}}" ); // display python variable
+    
+    </script>
+    {% endif %}
+    <script src="{%static 'js/jquery-2.2.3.min.js' %}"></script>
+    <!-- Slider-JavaScript -->
+    <script src="{%static 'js/responsiveslides.min.js' %}"></script>
+    <script>
+        $(function () {
+            $("#slider, #slider1").responsiveSlides({
+                auto: true,
+                nav: false,
+                speed: 1500,
+                namespace: "callbacks",
+                pager: true,
+            });
+        });
+    </script>
+    <!-- //Slider-JavaScript -->
+    <!-- script for password match -->
+    <script>
+        window.onload = function () {
+            document.getElementById("password1").onchange = validatePassword;
+            document.getElementById("password2").onchange = validatePassword;
+        }
+
+        function validatePassword() {
+            var pass2 = document.getElementById("password2").value;
+            var pass1 = document.getElementById("password1").value;
+            if (pass1 != pass2)
+                document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+            else
+                document.getElementById("password2").setCustomValidity('');
+            //empty string means no validation error
+        }
+    </script>
+    <!-- script for password match -->
+    <!-- //js -->
+    <script src="{%static 'js/move-top.js' %}"></script>
+    <script src="{%static 'js/easing.js' %}"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="{%static 'js/SmoothScroll.min.js' %}"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{%static 'js/bootstrap.min.js' %}"></script>
+    
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+
+</html>
